@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 ///design height(responsiveness)
 double logicalHeight() {
   return WidgetsBinding.instance.window.physicalSize.height /

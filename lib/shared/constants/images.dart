@@ -1,0 +1,13 @@
+const String basePath = "assets/images";
+const String slider1 = "$basePath/slider1.jpg";
+const String slider2 = "$basePath/slider2.jpg";
+const String slider3 = "$basePath/slider3.jpg";
+const String fullStar = "$basePath/full_star.png";
+const String user1 = "$basePath/user1.png";
+const String user2 = "$basePath/user2.png";
+const String user3 = "$basePath/user3.png";
+const String store1 = "$basePath/shop1.png";
+const String store2 = "$basePath/shop2.png";
+const String store3 = "$basePath/shop3.png";
+const String emptyStar = "$basePath/empty_star.png";
+const String halfStar = "$basePath/half_star.png";

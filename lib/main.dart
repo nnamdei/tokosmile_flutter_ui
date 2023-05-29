@@ -3,14 +3,19 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:provider/provider.dart';
-import 'package:tokosmileui/modules/homepage.dart';
+import 'package:tokosmileui/shared/app_providers.dart';
 import 'package:tokosmileui/shared/constants/strings.dart';
+import 'package:tokosmileui/shared/route_manager.dart';
 import 'package:tokosmileui/shared/utils/utils.dart';
+import 'package:tokosmileui/shared/widgets/nav.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initialize();
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: appProviders,
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -30,12 +35,11 @@ class MyApp extends StatelessWidget {
         navigatorKey: navigatorKey,
         scrollBehavior: SBehavior(),
         title: Strings.appName,
-        // home: SplashScreen(),
-        home: const HomePage(),
+        home: const Nav(),
         theme: ThemeData(
-          fontFamily: Strings.inter,
+          fontFamily: Strings.roboto,
         ),
-        //  onGenerateRoute: Routes.generateRoute,
+        routes: routes,
       ),
     );
   }
