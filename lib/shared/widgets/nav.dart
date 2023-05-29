@@ -53,7 +53,7 @@ class _NavState extends State<Nav> {
             label: Strings.voucher,
           ),
           const BottomNavigationBarItem(
-            icon: Icon(Icons.wallet),
+            icon: Icon(Icons.account_balance_wallet),
             label: Strings.wallet,
           ),
           const BottomNavigationBarItem(
